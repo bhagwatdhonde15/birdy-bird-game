@@ -190,9 +190,9 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        let gravity = 0.5;
+        let gravity = 0.35;
         let velocity = 0;
-        let lift = -10;
+        let lift = -7.5;
 
         let score = 0;
         let best = localStorage.getItem("best") || 0;
@@ -219,7 +219,7 @@
 
         function createPipe() {
 
-            const gap = 220;
+            const gap = 235;
 
             const topHeight =
                 Math.random() * 300 + 50;
@@ -452,7 +452,7 @@
 
             pipes.forEach(pipe => {
 
-                pipe.x -= 5;
+                pipe.x -= 3.5;
 
                 // collision
                 if (
